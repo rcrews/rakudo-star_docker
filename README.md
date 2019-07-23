@@ -15,8 +15,8 @@ See [`parse_xml.p6`](parse_xml.p6).
 The image uses Perl 5.24 because that's the default Perl 5 in the
 [`buildpack-deps:stretch-scm`](https://hub.docker.com/_/buildpack-deps)
 image on which `rakudo-star:2019.03` is based. The image will
-correspondingly update to Perl 5.28 when/if they change to
-`buildpack-deps:buster-scm`.
+correspondingly update to Perl 5.28 when/if the official rakudo-star
+image changes to `buildpack-deps:buster-scm`.
 
 # Pull
 

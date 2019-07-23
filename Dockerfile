@@ -34,12 +34,14 @@ RUN true \
   && cpan install \
     Readonly \
     Try::Tiny \
+    Object::AUTHORITY \
     HTML::HTML5::DOM \
   && rm -rf /root/.cpan
 
 RUN true \
   && zef install \
-    Inline::Perl5
+    Inline::Perl5 \
   && rm -rf /root/.zef
 
+WORKDIR /project
 CMD ["perl6"]
