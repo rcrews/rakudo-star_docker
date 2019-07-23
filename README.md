@@ -54,29 +54,18 @@ Pull requests welcome:
   is this still a thing or has modern Docker resolved the security
   problems with running processes as root within images?)
 
-* Add more/other Debian, Perl 5, or Perl 6 modules? Here is a list of
-  Perl 5 modules precompiled for Debian 9:
-  [Software Packages in "stretch", Subsection perl](https://packages.debian.org/stretch/perl/)
-
-<!--
-* Clear zef cache. Is there a zef option to default to Yes for
-  interactive questions, something like a -y flag? I think the commands
-  to clear the caches are the following, but these require manually
-  entering Y, so they don't work in the Dockerfile:
-
-      $ zef nuke RootDir && zef nuke TempDir && zef nuke StoreDir
--->
-
 * Is there a better way to clear the Perl 5 cpan cache than just
   removing the `~/.cpan` directory?
+  Is there a better way to clear the Perl 6 zef cache than just
+  removing the `~/.zef` directory?
 
-* Are there more modules I should add to either Perl 5 or Perl 6? In
-  particular, are there more precompiled Perl 5 modules I should add with
-  apt-get? Any missing
+* Are there more (or fewer) modules I should add to either Perl 5 or
+  Perl 6? In particular, are there more precompiled Perl 5 modules I
+  should add with apt-get
+  ([Software Packages in "stretch", Subsection perl](https://packages.debian.org/stretch/perl/))?
+  Any missing
   "[modern](http://modernperlbooks.com/books/modern_perl_2016/index.html)"
-  Perl 5 modules? In fact, aside from the `XML::LibXML` and `XML::LibXSLT`,
-  added with apt-get, are *any* additional Perl 5 modules needed, even
-  `Readonly` and `Try::Tiny` that are currently being added?
+  Perl 5 modules?
 
 * When building Perl 5 modules, several warn about characters not mapping
   to ASCII. Would like to change the configuration so the warnings don't
